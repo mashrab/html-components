@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+  <body>
+    <section>
+      <form>
+        <h3>What’s your gender?</h3>
+        <input type="radio" id="gender-male" name="gender" value="male" />
+        <label for="gender-male">Male</label><br />
+        <input type="radio" id="gender-female" name="gender" value="female" />
+        <label for="gender-female">Female</label>
+
+        <h3>Full Name</h3>
+        <input type="text" id="full-name" name="full-name" />
+        <br /><em>Alisher Usmonov</em>
+
+        <h3>Date of birth</h3>
+        <input type="date" id="dob" name="dob" />
+
+        <h3>Your phone number</h3>
+        <input type="tel" id="phone" name="phone" />
+        <br /><em>+44 07123 456678</em>
+
+        <h3>Your email</h3>
+        <input type="email" id="email" name="email" />
+        <br /><em>candidate@gmail.com</em>
+
+        <h3>Where are you from?</h3>
+        <input type="text" id="origin" name="origin" />
+
+        <h3>Where are you currently living?</h3>
+        <input type="text" id="current-residence" name="current-residence" />
+        <br /><em>UK, London, Uzbekistan, Buxoro</em>
+
+        <h3>What is your citizenship status?</h3>
+        <select id="citizenship" name="citizenship">
+          <option value="">-- Please Select --</option>
+          <option value="british-citizen">British citizen</option>
+          <option value="tier-5-visa">Tier 5 visa</option>
+          <option value="working-visa">Working visa</option>
+          <option value="talent-visa">Talent visa</option>
+          <option value="marriage-visa">Marriage visa</option>
+          <option value="student-visa">Student visa</option>
+          <option value="illegal-migrant">(?)Illegal migrant</option>
+          <option value="asylum-seeker">(?)Asylum seeker</option>
+          <option value="refugee">(?)Refugee</option>
+          <option value="other">Other (please specify)</option>
+        </select>
+
+        <h3>Your education level</h3>
+        <select id="education" name="education">
+          <option value="">-- Select Level --</option>
+          <option value="unfinished">Unfinished school</option>
+          <option value="school">School</option>
+          <option value="college">Community college</option>
+          <option value="bachelors">Bachelors</option>
+          <option value="masters">Masters</option>
+          <option value="phd">PhD</option>
+        </select>
+
+        <h3>What do you do for work?</h3>
+        <textarea
+          id="work-details"
+          name="work-details"
+          rows="3"
+          cols="50"
+        ></textarea>
+        <br /><em>Mechanic, Tailor, Shveya, O'qituvchi</em>
+
+        <h3>What is your employment status?</h3>
+        <select id="employment-status" name="employment-status">
+          <option value="">-- Select Status --</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="part-time">Part-time employee</option>
+          <option value="full-time">Full-time employee</option>
+          <option value="self-employed">Self-Employed</option>
+          <option value="apprentice">Apprentice</option>
+          <option value="contractor">Contractor</option>
+          <option value="volunteer">Volunteer</option>
+        </select>
+
+        <h3>Your income level</h3>
+        <input
+          type="range"
+          id="income"
+          name="income"
+          min="0"
+          max="1000000"
+          step="1000"
+        />
+        <br /><em>0 to 1,000,000+</em>
+
+        <h3>Your hobbies and interests?</h3>
+        <textarea id="hobbies" name="hobbies" rows="4" cols="50"></textarea>
+        <br /><em>Painting, Boxing, TV watching, Knitting, Football</em>
+
+        <h3>How do you spend your weekends?</h3>
+        <textarea id="weekends" name="weekends" rows="4" cols="50"></textarea>
+        <br /><em>TV watching, At bars</em>
+
+        <h3>What’s your height? (cm)</h3>
+        <input type="number" id="height" name="height" min="100" max="250" />
+        <br /><em>180</em>
+
+        <h3>Do you do fitness/gym regularly?</h3>
+        <input type="radio" id="fit-never" name="fitness" value="never" />
+        <label for="fit-never">Never</label><br />
+        <input type="radio" id="fit-year" name="fitness" value="year" />
+        <label for="fit-year">A few times in a year</label><br />
+        <input type="radio" id="fit-month" name="fitness" value="month" />
+        <label for="fit-month">Several times a month</label><br />
+        <input type="radio" id="fit-week" name="fitness" value="week" />
+        <label for="fit-week">Several times a week</label><br />
+        <input type="radio" id="fit-daily" name="fitness" value="daily" />
+        <label for="fit-daily">Nearly everyday</label>
+
+        <h3>Do you drink alcohol?</h3>
+        <input type="radio" id="alc-yes" name="alcohol" value="yes" />
+        <label for="alc-yes">Yes</label><br />
+        <input type="radio" id="alc-no" name="alcohol" value="no" />
+        <label for="alc-no">No</label>
+
+        <h3>Do you smoke?</h3>
+        <input type="radio" id="smoke-yes" name="smoke" value="yes" />
+        <label for="smoke-yes">Yes</label><br />
+        <input type="radio" id="smoke-no" name="smoke" value="no" />
+        <label for="smoke-no">No</label>
+
+        <h3>What is your religion?</h3>
+        <input type="radio" id="rel-islam" name="religion" value="islam" />
+        <label for="rel-islam">Islam</label><br />
+        <input
+          type="radio"
+          id="rel-christianity"
+          name="religion"
+          value="christianity"
+        />
+        <label for="rel-christianity">Christianity</label><br />
+        <input type="radio" id="rel-other" name="religion" value="etc" />
+        <label for="rel-other">etc.</label>
+
+        <h3>How strictly/casually do you practice your religion?</h3>
+        <input
+          type="radio"
+          id="practice-strictly"
+          name="practice"
+          value="strictly"
+        />
+        <label for="practice-strictly">Strictly</label><br />
+        <input
+          type="radio"
+          id="practice-mod"
+          name="practice"
+          value="moderately"
+        />
+        <label for="practice-mod">Moderately</label><br />
+        <input
+          type="radio"
+          id="practice-cas"
+          name="practice"
+          value="casually"
+        />
+        <label for="practice-cas">Casually</label><br />
+        <input
+          type="radio"
+          id="practice-none"
+          name="practice"
+          value="not-at-all"
+        />
+        <label for="practice-none">Not at all</label>
+
+        <h3>Do you want children?</h3>
+        <input type="radio" id="kids-yes" name="kids-intent" value="yes" />
+        <label for="kids-yes">Yes</label><br />
+        <input type="radio" id="kids-no" name="kids-intent" value="no" />
+        <label for="kids-no">No</label>
+
+        <h3>How many children do you want?</h3>
+        <input type="number" id="kids-count" name="kids-count" min="0" />
+        <br /><em>1, 10</em>
+
+        <h3>How do you handle stress?</h3>
+        <textarea
+          id="stress-handle"
+          name="stress-handle"
+          rows="3"
+          cols="50"
+        ></textarea>
+        <br /><em>I explode, I hide</em>
+
+        <h3>What do you value most in the partner?</h3>
+        <textarea
+          id="partner-values"
+          name="partner-values"
+          rows="4"
+          cols="50"
+        ></textarea>
+        <br /><em>Peacefulness, Humour, Money, Voice</em>
+
+        <h3>What are the dealbreakers in a relationship?</h3>
+        <textarea
+          id="dealbreakers"
+          name="dealbreakers"
+          rows="4"
+          cols="50"
+        ></textarea>
+        <br /><em
+          >Infidelity, disrespect, Chews food loudly, Stinks, Isn't from
+          Samarqand, Travelled too much / not enough, Too serious</em
+        >
+
+        <h3>What was you longest relationship?</h3>
+        <input type="text" id="longest-rel" name="longest-rel" />
+        <br /><em
+          >Divorced after being married for 5 years, Dated for 2 years, Never
+          been in relationship</em
+        >
+
+        <h3>Who you don’t want to date?</h3>
+        <textarea id="blacklist" name="blacklist" rows="3" cols="50"></textarea>
+        <br /><em>Muqaddas Yunusova, Sherzod Petrovich</em>
+
+        <h3>Are you currently dating?</h3>
+        <input type="radio" id="dating-yes" name="dating" value="yes" />
+        <label for="dating-yes">Yes</label><br />
+        <input type="radio" id="dating-no" name="dating" value="no" />
+        <label for="dating-no">No</label>
+
+        <h3>What are your physical preferences?</h3>
+        <textarea id="phys-pref" name="phys-pref" rows="3" cols="50"></textarea>
+        <br /><em
+          >Taller/Smaller than me, Uzbek, Central Asian, Smells nice, Small
+          face, Bushy brows</em
+        >
+
+        <h3>LINK TO VIDEO</h3>
+        <input type="text" id="video-link" name="video-link" />
+
+        <br /><br />
+        <button type="submit">Submit Detailed Application</button>
+      </form>
+    </section>
+  </body>
+</html>
